@@ -1,0 +1,340 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Montserrat", system-ui;
+    
+}
+.main{
+    display:flex;
+
+}
+.sidebar{
+    width: 350px;
+    background: black;
+    height: 100vh;
+    border-radius: 1rem;
+    
+}
+.content{
+    flex:1;
+    background: #121212;
+    border-radius: 1rem;
+}
+.music-player{
+    position: fixed;
+    bottom: 0px;
+    background: black;
+    width: 100%;
+    height: 72px;
+
+}
+a{
+    text-decoration: none;
+}
+
+.nav{
+    background: #121212;
+    height:100px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    margin:0.5rem 0.5rem ;
+}
+
+.nav-option{
+    line-height:2.5rem ;
+    background: #121212;
+    padding-left: .5rem;
+    opacity: .7;
+}
+
+.nav-option:hover {
+    opacity: 1;
+}
+
+.nav-option a{
+    margin:.5rem;
+}
+
+.nav-option i{
+    font-size: 1.2rem;
+}
+
+.library{
+    background-color: #121212;
+    /* line-height: 2.5rem; */
+    /* padding-left: 1.3rem; */
+    /* opacity: .7; */
+    height: 100%;
+    border-radius: 1rem;
+    margin:0.5rem 0.5rem ;
+    /* flex-wrap: wrap; */
+    
+    /* flex:1; */
+}
+
+.upper-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    background: #121212;
+
+}
+
+
+.lib-option img{
+    height: 1.3rem;
+    width: 1.3rem;
+
+}
+
+.lib-option {
+    height: 2.5rem;
+    background: #121212;
+}
+.icon{
+    height:2.5rem;
+    padding-right:.5rem;
+    padding-top: .25rem;
+    display: flex;
+    background: #121212;
+}
+.icon i{
+    opacity:.7;
+    background: #121212;
+    padding: .3rem 1rem;
+}
+.icon i:hover {
+    opacity:1;
+
+}
+
+.box{
+    margin: .5rem .35rem;
+    border-radius: 1rem;
+    background: #232323;
+    height: 110px;
+    padding:.5rem .5rem;
+}
+
+.box .b1{
+    line-height: 2rem;
+    font-size: 1rem;
+    background: #232323;
+}
+.box .b2{
+    line-height: 2rem;
+    font-size: .85rem;
+    background: #232323;
+}
+
+.box .button{
+    background: #fff;
+    color: black;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: .7rem;
+    font-weight: 700;
+    padding: .45rem .7rem;
+}
+
+.content{
+    margin-top: .5rem;
+    /* overflow:scroll; */
+    background: #121212;
+}
+
+.sticky-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    padding: .5rem .5rem 0 0;
+    background: #121212;
+    z-index: 10;
+}
+
+.content .sticky-nav img{
+    height: 1rem;
+    margin: .5rem;
+    padding-left: .7rem;
+    background: #121212;
+}
+
+.for-back{
+    background: #121212;
+}
+.content .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 22rem;
+    background: #121212;
+}
+.explore-primium{
+    background: white;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    font-size: .75rem;
+    font-weight: 700;
+    padding:0 .5rem;
+    margin: .25rem .7rem;
+}
+
+.buttons .install-app{
+    border: none;
+    border-radius: 1rem;
+    font-size: .75rem;
+    font-weight: 700;
+    padding:0 .5rem;
+    margin: 0 .7rem;
+
+}
+.buttons .human{
+    margin: .5rem .7rem;
+    background: #121212;
+}
+
+/* for hide elements in sticky-nav  */
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.cards{
+    background: #121212;
+    overflow-y:scroll;
+
+}
+
+h2{
+    margin:.5rem .5rem 0;
+    background: #121212;
+}
+.cards-container{
+    background: #121212;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background: #232323;
+    padding: .7rem .7rem;
+    margin: .5rem 0 0 1rem;
+    width: 152px;
+    border-radius: .5rem ;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: .5rem;
+}
+.card .card-title{
+    background: #232323;
+    margin:.5rem 0;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.card .card-info{
+    background: #232323;
+    font-size: .7rem;
+    opacity: .7;
+}
+.card:hover{
+    background-color: black;
+    .card-title{
+        background: black;
+    }
+    .card-info{
+        background: black;
+    }
+}
+
+.music-player{
+    display: flex;
+    flex-direction: row;
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    padding-left: .5rem;
+}
+.part1 img{
+    height: 45px;
+    width: 45px;
+    margin: .7rem;
+}
+.part1 .name{
+   font-size: .9rem;
+   margin: .9rem 0 0 0;
+}
+.part1 .singer{
+    font-size: .7rem;
+    margin-top: .5rem;
+    opacity: .7;
+    text-decoration: underline;
+}
+.part1 .heart{
+    margin-top: 1.8rem;
+    margin-left: .9rem;
+}
+
+
+.part2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part2 img{
+    width: 15px;
+    height: 15px;
+    opacity: .7;
+    padding: 10px 15px;
+}
+.part2 .play-button{
+    width: 39px;
+    height: 39px;
+    opacity: 1;
+    padding: 0px 15px 0 15px;
+
+}
+.part2 .playback-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.playback-bar input{
+    width: 65%;
+}
+
+
+
+.part3{
+    width: 25%;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: .9;
+    align-items: center;
+    padding-right: .5rem;   
+}
+.item3:hover{
+    opacity: 1;
+    /* font-size: 1.2rem; */
+}
+
+
+
+

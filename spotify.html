@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify- Web player:Music for everyone </title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="upper-bar" >
+                <div class="lib-option nav-option" >
+                    <img src="./assets/library_icon.png"></i>
+                    <a href="#">Your library</a>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+                <div class="box">
+                    <div class="b1">Creat your first playliat</div>
+                    <div class="b2" style="opacity: .7;">it's easy, we'll help you</div>
+                    <button class="button">Create Playlist</button>
+                </div>
+                <div class="box">
+                    <p class="b1">Let's find some podcast to follow</p>
+                    <p class="b2" style="opacity: .7;">We'll keep you update on new episodes</p>
+                    <button class="button">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sticky-nav">
+                <div class="for-back">
+                    <img src="./assets/backward_icon (1).png">
+                    <img class="hide" src="./assets/forward_icon.png">
+                </div>
+                <div class="buttons">
+                    <button class="explore-primium hide">Explore Premium</button>
+                    <button class="install-app">
+                        <i class="fa-regular fa-circle-down" style="margin-right: .25rem;"></i>
+                        Install App</button>
+                        <div class="human">
+                        <i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+            </div>
+            <div class="cards">
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg">
+                        <div class="card-title">Top 50-Global</div>
+                        <div class="card-info">Your daily updates of the most plaid tracks right...</div>
+                    </div>
+                </div>
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg">
+                        <div class="card-title">Mahiye Jinna Sohna</div>
+                        <div class="card-info">Darshan Raval</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg">
+                        <div class="card-title">Naa Ready</div>
+                        <div class="card-info">Anirudh Ravichandra</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Screenshot 2024-09-07 034656.png">
+                        <div class="card-title">Satyanaas</div>
+                        <div class="card-info">Pritam,Arijit Singh,Nakash Aziz</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/Screenshot 2024-09-07 032824.png">
+                        <div class="card-title">Tu Jaane Na</div>
+                        <div class="card-info">Atif Aslam,Pritam</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/Screenshot 2024-09-07 032641.png">
+                        <div class="card-title">Tu Hain Toh</div>
+                        <div class="card-info">Bunny,Hunny,sagar</div>
+                    </div>
+                  
+                </div>
+                
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="part1">
+                <img src="./assets/Screenshot 2024-09-07 034656.png" >
+                <div class="song-info">
+                    <div class="name">Satyanaas</div>
+                    <div class="singer">Arijit Singh</div>
+                </div>
+                <i class="fa-regular fa-heart heart"></i>
+                <i class="fa-solid fa-book heart"></i>
+            </div>
+            <div class="part2">
+                <div class="player-controls">
+                    <img class="item3"  src="./assets/player_icon1.png">
+                    <img class="item3" src="./assets/player_icon2.png">
+                    <img class="play-button" src="./assets/player_icon3.png">
+                    <img class="item3" src="./assets/player_icon4.png">
+                    <img class="item3" src="./assets/player_icon5.png">
+                    
+                </div>
+                <div class="playback-bar">
+                    <span>00:00</span>
+                    <input type="range" min="0" max="100" step="1" >
+                    <span>33:33</span>
+                </div>
+            </div>
+            <div class="part3">
+                <i class="fa-brands fa-youtube item3"></i>
+                <i class="fa-solid fa-microphone item3"></i>
+                <i class="fa-solid fa-layer-group item3"></i>
+                <i class="fa-solid fa-tv item3"></i>
+                <i class="fa-solid fa-volume-high item3"></i>
+                <input type="range" min="0" max="100" value="70" >
+            </div>
+        </div>
+    </div>
+    
+   
+</body>
+</html>
